@@ -1,1 +1,62 @@
-*{box-sizing: border-box;}
+/* Screen */
+
+* {
+    box-sizing: border-box;
+}
+
+a,
+a:visited,
+a:hover {
+    text-decoration: none;
+    color: #000000;
+}
+
+/* Header */
+
+/* header Image */
+
+header img {
+    min-width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* header Navigation */
+nav>ul {
+    width: 100%;
+    background: #ddd;
+}
+
+nav>ul>li {
+    padding: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Aside */
+
+/* aside Navigation */
+aside{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 150px;
+    padding-top: 30px;
+    padding-left: 30px;
+    background: #ddd;
+}
+
+.side-nav{
+    width: 150px;
+    background: #fff;
+}
+
+
+
+
+
+/* 반응형 */
+
+@media screen { /* Aside 부분 viewpoint width 값이 줄어들면 사라짐*/
+    
+}
