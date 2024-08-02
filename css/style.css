@@ -10,6 +10,10 @@ a:hover {
     text-decoration: none;
     color: #000000;
 }
+ul{
+    margin: 0;
+    padding: 0;
+}
 
 /* Header */
 
@@ -28,15 +32,56 @@ nav>ul {
 }
 
 nav>ul>li {
-    padding: 30px;
+    padding: 15px;
     text-align: center;
     cursor: pointer;
+}
+
+/* Content */
+
+/* content Header */
+
+.content-header{
+    margin-bottom: 35px;
+}
+
+.content-header img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* content middle */
+
+.content-middle h1 {
+    font-size: 25px;
+}
+
+.content-middle li {
+    cursor: pointer;
+    padding: 5px;
+    background: #ddd;
+}
+
+/* content Main */
+
+.content{
+    margin-top: 35px;
+}
+
+.content-main h1 {
+    font-size: 25px;
+}
+
+.content-main li {
+    cursor: pointer;
+    padding: 5px;
+    background: #ddd;
 }
 
 /* Aside */
 
 /* aside Navigation */
-aside{
+aside {
     position: fixed;
     left: 0;
     top: 0;
@@ -46,17 +91,14 @@ aside{
     background: #ddd;
 }
 
-.side-nav{
+.side-nav {
     width: 150px;
     background: #fff;
 }
 
-
-
-
-
 /* 반응형 */
 
-@media screen { /* Aside 부분 viewpoint width 값이 줄어들면 사라짐*/
-    
+@media screen {
+    /* Aside 부분 viewpoint width 값이 줄어들면 사라짐*/
+
 }
