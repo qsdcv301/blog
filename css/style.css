@@ -82,13 +82,13 @@ nav>ul>li {
 
 /* aside Navigation */
 aside {
-    position: fixed;
-    left: 0;
-    top: 0;
+    position: relative;
+    height: 1237.5px;
     width: 150px;
     padding-top: 30px;
     padding-left: 30px;
     background: #ddd;
+    flex-wrap: wrap;
 }
 
 .side-nav {
