@@ -5,10 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taehyeon Study History</title>
+    <link rel="shortcut icon" href="images/developer.png" type="image/x-icon">
+    <link rel="icon" href="images/developer.png" type="image/x-icon">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dongle&family=Noto+Sans+KR:wght@100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"
+        integrity="sha512-MqL4+Io386IOPMKKyplKII0pVW5e+kb+PI/I3N87G3fHIfrgNNsRpzIXEi+0MQC0sR9xZNqZqCYVcC61fL5+Vg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Dongle&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
     <script src="js/jquery-1.12.4.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -16,15 +22,28 @@
 
 <body>
     <!-- 블로그 헤더 부분 -->
-    <header>
-        <img src="images/marvin-meyer-SYTO3xs06fU-unsplash.jpg" alt="titleImage">
+    <header class="container-fluid">
+        <div class="header-img">
+            <img src="images/marvin-meyer-SYTO3xs06fU-unsplash.jpg" alt="titleImage">
+        </div>
         <div class="container">
             <div class="row flex-column">
                 <nav>
-                    <ul class="d-flex justify-content-around flex-row">
-                        <li>Study</li>
-                        <li>Project</li>
-                        <li>Search</li>
+                    <ul class="d-flex justify-content-around flex-row align-items-center">
+                        <li class="p-2">
+                            <a href="#">Calender</a>
+                        </li>
+                        <li class="p-2">
+                            <a href="#">Notice</a>
+                        </li>
+                        <li class="p-2">
+                            <form action="#" class="search" method="get">
+                                <input id="search-query" type="search" placeholder="검색..." autocomplete="off">
+                                <button type="submit" class="search-btn py-2 px-3">
+                                    <i class="ri-search-line search-icon"></i>
+                                </button>
+                            </form>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -32,7 +51,7 @@
     </header>
 
     <!-- 메인 화면 부분 -->
-    <section class="main-page container">
+    <section class="nav-page container">
         <div class="row">
             <!-- 화면 좌측 메뉴 부분 -->
             <aside class="col-3">
@@ -40,27 +59,25 @@
                     <h2>Taehyoen blog</h2>
                     <li><span>Name : </span>김태현</li>
                     <li><span>Email : </span>qsdcv301@naver.com</li>
+                    <li class="pi-img"><img src="images/marvin-meyer-SYTO3xs06fU-unsplash.jpg" alt="프로필사진"></li>
                 </ul>
                 <ul class="side-nav">
                     <h2><a href="#">Study</a></h2>
-                    <li><a href="#">HTML</a></li>
-                    <li><a href="#">CSS</a></li>
+                    <li><a href="#">HTML & CSS</a></li>
                     <li><a href="#">JAVASCRIPT</a></li>
                     <li><a href="#">JAVA</a></li>
                     <li><a href="#">DB</a></li>
                 </ul>
                 <ul class="side-nav">
                     <h2><a href="#">Project</a></h2>
-                    <li><a href="#">HTML</a></li>
-                    <li><a href="#">CSS</a></li>
+                    <li><a href="#">HTML & CSS</a></li>
                     <li><a href="#">JAVASCRIPT</a></li>
                     <li><a href="#">JAVA</a></li>
                     <li><a href="#">DB</a></li>
                 </ul>
                 <ul class="side-nav">
                     <h2><a href="#">Plan</a></h2>
-                    <li><a href="#">HTML</a></li>
-                    <li><a href="#">CSS</a></li>
+                    <li><a href="#">HTML & CSS</a></li>
                     <li><a href="#">JAVASCRIPT</a></li>
                     <li><a href="#">JAVA</a></li>
                     <li><a href="#">DB</a></li>
@@ -72,26 +89,71 @@
         </div>
     </section>
 
-    <section class="container">
-        <div class="row content-middle">
+    <section class="container content-page pb-5">
+        <div class="row content-middle py-2">
             <div class="notice col-6">
-                <h1><a href="#">공지사항</a></h1>
-                <ul class="content-middleBox noticeBox">
-                    <li><a href="#">notice-Text-01</a></li>
-                    <li><a href="#">notice-Text-02</a></li>
-                    <li><a href="#">notice-Text-03</a></li>
-                    <li><a href="#">notice-Text-04</a></li>
-                    <li><a href="#">notice-Text-05</a></li>
+                <h1><a href="#">최신글</a></h1>
+                <ul class="content-middleBox contentBox">
+                    <li><a href="#">New-Content-01</a></li>
+                    <li><a href="#">New-Content-02</a></li>
+                    <li><a href="#">New-Content-03</a></li>
+                    <li><a href="#">New-Content-04</a></li>
+                    <li><a href="#">New-Content-05</a></li>
+                    <li><a href="#">New-Content-04</a></li>
+                    <li><a href="#">New-Content-05</a></li>
                 </ul>
             </div>
-            <div class="calender col-6">
-                <h1><a href="#">일정표</a></h1>
-                <ul class="content-middleBox calenderBox">
-                    <li><a href="#">calender-Text-01</a></li>
-                    <li><a href="#">calender-Text-02</a></li>
-                    <li><a href="#">calender-Text-03</a></li>
-                    <li><a href="#">calender-Text-04</a></li>
-                    <li><a href="#">calender-Text-05</a></li>
+            <div class="gallery col-6">
+                <h1><a href="#">갤러리</a></h1>
+                <ul class="galleryBox card-columns">
+                    <li class="card">
+                        <img class="card-img-top card-gallery" src="images/maeva-vigier-S7VWJ1twWt0-unsplash.jpg"
+                            alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">갤러리-제목-1asdfaasdfasdfasdfsdf</h4>
+                            <p class="card-text">갤러리-내용-1asdfasasdfasdfadsdf</p>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <img class="card-img-top card-gallery" src="images/maeva-vigier-S7VWJ1twWt0-unsplash.jpg"
+                            alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">갤러리-제목-1</h4>
+                            <p class="card-text">갤러리-내용-1</p>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <img class="card-img-top card-gallery" src="images/maeva-vigier-S7VWJ1twWt0-unsplash.jpg"
+                            alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">갤러리-제목-1</h4>
+                            <p class="card-text">갤러리-내용-1</p>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <img class="card-img-top card-gallery" src="images/maeva-vigier-S7VWJ1twWt0-unsplash.jpg"
+                            alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">갤러리-제목-1asdfaasdfasdfasdfsdf</h4>
+                            <p class="card-text">갤러리-내용-1asdfasasdfasdfadsdf</p>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <img class="card-img-top card-gallery" src="images/maeva-vigier-S7VWJ1twWt0-unsplash.jpg"
+                            alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">갤러리-제목-1</h4>
+                            <p class="card-text">갤러리-내용-1</p>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <img class="card-img-top card-gallery" src="images/maeva-vigier-S7VWJ1twWt0-unsplash.jpg"
+                            alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">갤러리-제목-1</h4>
+                            <p class="card-text">갤러리-내용-1</p>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -104,15 +166,38 @@
                     <li><a href="#">notice-Text-03</a></li>
                     <li><a href="#">notice-Text-04</a></li>
                     <li><a href="#">notice-Text-05</a></li>
+                    <li><a href="#">notice-Text-06</a></li>
+                    <li><a href="#">notice-Text-07</a></li>
+                    <li><a href="#">notice-Text-08</a></li>
+                    <li><a href="#">notice-Text-09</a></li>
+                    <li><a href="#">notice-Text-10</a></li>
                 </ul>
             </div>
         </div>
     </section>
 
-    <footer>
-
+    <footer class="container-fluid">
+        <div class="copyright text-center pt-4 pb-2">
+            <div class="footer-subnav pb-3">
+                <a href="#" class="text-white text-decoration-none">쿠키 설정</a>
+                <span class="px-3 text-white">ㅣ</span>
+                <a href="#" class="text-white text-decoration-none">구매 이용약관</a>
+                <span class="px-3 text-white">ㅣ</span>
+                <a href="#" class="text-white text-decoration-none">개인정보 처리방침</a>
+                <span class="px-3 text-white">ㅣ</span>
+                <a href="#" class="text-white text-decoration-none">아디클럽 이용약관</a>
+                <span class="px-3 text-white">ㅣ</span>
+                <a href="#" class="text-white text-decoration-none">사업자정보확인</a>
+                <span class="px-3 text-white">ㅣ</span>
+                <a href="#" class="text-white text-decoration-none">공정거래 자율준수</a>
+                <span class="px-3 text-white">ㅣ</span>
+                <a href="#" class="text-white text-decoration-none">채무지급보증안내</a>
+            </div>
+            <p class="text-white">&copy; Taehyeon, LLC. All Rights Reserved</p>
+            <p>김태현 | 통신판매업신고: 2007-서울서초-10391 | 개인정보관리책임자: 장영태 | 호스팅서비스사업자: 아디다스코리아(유) | 전화번호: 010-1234-1234 | 이메일:
+                test@naver.com</p>
+        </div>
     </footer>
-
     <script src="js/script.js"></script>
 </body>
 
