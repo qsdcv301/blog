@@ -60,12 +60,12 @@ nav > ul > li {
   font-size: 35px;
 }
 
-nav > ul > li a {
+nav > ul > li {
   transition: all 300ms ease;
 }
 
-nav > ul > li a:hover {
-  font-size: 40px;
+nav > ul > li:hover:not(:last-child) {
+  background: #71c9ce;
 }
 
 .search {
@@ -163,6 +163,15 @@ p {
   background: #cbf1f5;
 }
 
+.topword {
+  display: inline-block;
+  padding: 8px 15px;
+  background: #ddd;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
 /* Aside */
 
 /* aside Navigation */
@@ -222,6 +231,12 @@ aside h2 {
 footer {
   /* background: #71c9ce; */
   background: #a6e3e9;
+}
+
+/* article */
+img {
+  min-width: 100%;
+  height: 300px;
 }
 
 /* 반응형 */

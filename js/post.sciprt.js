@@ -18,7 +18,7 @@ $(document).ready(function () {
 
         //본문에서 HTML 코드 필터링
         const snippet = marked
-          .parse(content.split("\n").slice(0, 10).join("\n"))
+          .parse(content.split("\n").slice(0, 6).join("\n"))
           .replace(/<\/?[^>]+(>|$)/g, "");
         const postLink = `article.html?file=${file}`;
 
