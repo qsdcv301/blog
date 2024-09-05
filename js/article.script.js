@@ -15,14 +15,14 @@ $(document).ready(function () {
     // 본문에서 HTML 코드 필터링
     const snippet = marked.parse(content);
 
-    const postLink = `article.html?file=${file}`;
+    const articlelink = `article.html?file=${file}`;
 
     // HTML 만들기
-    const postHTML = `
+    const articleHTML = `
       <div class="col-12">
         <div class="bg-white m-3 p-5 shadow-sm  myposts">
           <div class="img-box"> 
-            <a href="${postLink}"><img src="${image}" class="img-fluid img-thumbnail"></a>
+            <a href="${articlelink}"><img src="${image}" class="img-fluid img-thumbnail"></a>
             <span class="date">${date}</span>
           </div>
           <div class="content-box">
@@ -35,7 +35,7 @@ $(document).ready(function () {
     `;
 
     // 포스트를 id myposts에 append
-    $("#myblogs").append(postHTML);
+    $("#myblogs").append(articleHTML);
   });
 
   function parseMarkDown(text) {

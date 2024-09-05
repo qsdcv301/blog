@@ -141,8 +141,32 @@
                 </div>
             </div>
             <div class="content-main col-12 col-md-9">
-                <div class="row" id="myposts">
-                    <!-- 포스팅 들어가는 곳 -->
+                <div class="row" id="contactme">
+                    <form action="" method="post" class="bg-white m-3 p-5 shadow-sm emailbg">
+                        <h1 class="text-center mt-5">Contact me</h1>
+                        <p class="text-center text-success mb-5">연락처를 남겨 주시면 확인 후 연락드리겠습니다.</p>
+                        <ul class="emailform">
+                            <li class="col-md-6">
+                                <input type="eamil" name="fromEmail" id="fromEmail" class="form-control"
+                                    placeholder="이메일주소" required>
+                            </li>
+                            <li class="col-md-6">
+                                <input type="text" name="fromTel" id="fromTel" class="form-control" placeholder="연락처"
+                                    required>
+                            </li>
+                            <li class="col-md-12">
+                                <input type="text" name="subject" id="subject" class="form-control" placeholder="제목"
+                                    required>
+                            </li>
+                            <li class="col-md-12">
+                                <textarea name="contents" rows="10" id="body" placeholder="내용" class="form-control"
+                                    required></textarea>
+                            </li>
+                            <li class="col-md-12 text-center">
+                                <button type="button" id="sendEmail" class="btn btn-lg btn-success">이메일 보내기</button>
+                            </li>
+                        </ul>
+                    </form>
                 </div><!--/.ROW-->
             </div>
         </div>
@@ -177,8 +201,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/14.1.0/marked.min.js"
         integrity="sha512-Qktj2Bk6+ojlt4dv3vRu3WBEdrRTrG9uiDbEWktHTMfMejbM2jGae7SxdSeUWN1ictEX/wJ7SZtq5WPAT88hcA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="js/post.sciprt.js"></script>
     <script src="js/repo.script.js"></script>
+    <script src="js/smtp.js"></script>
     <script src="js/hotword.script.js"></script>
     <script src="js/script.js"></script>
 </body>
